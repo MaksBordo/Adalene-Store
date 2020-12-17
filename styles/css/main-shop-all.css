@@ -1,0 +1,46 @@
+.main-shop-all {
+  width: 100%;
+  background: #fff;
+}
+.main-shop-all__title {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  padding: 80px;
+}
+
+.filter {
+  padding-right: 50px;
+}
+.filter__title {
+  font-size: 20px;
+}
+.filter__btn {
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+}
+.filter__content {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  visibility: hidden;
+  transition: height 0.2s;
+}
+
+.grid-cells {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-cells__cell {
+  padding: 0px 30px 60px 30px;
+}
+
+/*# sourceMappingURL=main-shop-all.css.map */

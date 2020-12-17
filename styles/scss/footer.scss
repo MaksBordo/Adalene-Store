@@ -1,0 +1,64 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &__adalene {
+    width: 100%;
+    background: #fff;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__link {
+    padding: 20px;
+  }
+  &__link:hover {
+    color: red;
+  }
+  /*******************************************subscribe-form***************************/
+  &__subscribe-form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__subscribe-title {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+  }
+  &__subscribe-input {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 0px;
+    border-bottom: 2px solid red;
+  }
+  &__subscribe-btn {
+    color: red;
+    background: #fff;
+    border: 1px solid #bc4c2a;
+    padding: 20px 50px;
+    margin-top: 30px;
+    &:hover {
+      color: white;
+      background: #bc4c2a;
+    }
+  }
+  /*******************************************wix***************************************/
+  &__wix {
+    width: 100%;
+    height: 50px;
+    background: #f6f3ef;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  &__link-wix {
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+}

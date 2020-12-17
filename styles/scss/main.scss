@@ -1,0 +1,76 @@
+.main {
+  width: 100%;
+  &__content-top {
+    width: 100%;
+    height: calc(100vh - 218px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    color: #fff;
+    font-size: 50px;
+  }
+  &__link {
+    color: #fff;
+    display: inline-block;
+    &_shop-all {
+      border: 1px solid white;
+      padding: 20px 50px;
+      margin-top: 50px;
+      &:hover {
+        color: red;
+        background: white;
+      }
+    }
+  }
+  /************************************************bestsellers*********************************/
+  .bestsellers {
+    width: 100%;
+    background: #fff;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__slideshow {
+      margin-top: 100px;
+      width: 100%;
+      background: #fff;
+    }
+    &__link_shop-all {
+      color: red;
+      border: 1px solid #bc4c2a;
+      padding: 20px 50px;
+      margin-top: 100px;
+      &:hover {
+        color: white;
+        background: #bc4c2a;
+      }
+    }
+  }
+  .slideshow {
+    display: flex;
+    overflow: hidden;
+    &__control {
+      flex: 0 0 10%;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    &__container {
+      flex: 0 0 80%;
+      display: flex;
+      transform: translateX(-25%);
+      z-index: 0;
+    }
+    &__item {
+      padding: 0 20px;
+      flex: 0 0 25%;
+      transition: transform 1s;
+    }
+    &__control {
+      overflow: hidden;
+      z-index: 10;
+    }
+  }
+}
