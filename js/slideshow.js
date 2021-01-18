@@ -1,8 +1,23 @@
 const slideshow = document.querySelector('.slideshow');
 const slideshowItems = document.querySelectorAll('.slideshow__item');
 const [prev, next] = document.querySelectorAll('.slideshow__control');
-prev.addEventListener('click', shiftLeft);
-next.addEventListener('click', shiftRight);
+let transitionend = false;
+prev.addEventListener('click', () => {
+    if (transitionend) {
+        transitionend = false;
+        shiftLeft();
+    }
+});
+next.addEventListener('click', () => {
+    if (transitionend) {
+        transitionend = false;
+        shiftRight();
+    }
+});
+slideshowItems.forEach((el) => {
+    el.addEventListener('transitionend', () => { transitionend = true; })
+ });
+
 let intervalId;
 let productAmountIteration = 0;
 

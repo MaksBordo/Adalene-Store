@@ -2,7 +2,7 @@ const filterBtns = document.querySelectorAll('.filter__btn');
 const filterContent = document.querySelectorAll('.filter__content');
 let filterExpanded = [false, false, false, false];
 for (let i = 0; i < filterBtns.length; i++){
-    filterBtns[i].addEventListener('click', expandFilter.bind( null, i));
+    filterBtns[i].addEventListener('click', expandFilter.bind( null, i)); //()=>{expandFilter(i);}
 }
 function expandFilter(index) {
     if (!filterExpanded[index]) {
